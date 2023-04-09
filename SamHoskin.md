@@ -18,12 +18,18 @@ Time:
   - My calendar in normally up-to-date and open for people to see 
 # Best ways to communicate with me
 Communicate:
+  - Slack or Call me
+  - Be direct with what you looking for
+  - Be clean on any urgency, as I will do my best to priorities
 
 # How I best receive feedback
 Feedback:
+  - Honest and Often, If you are willing to give it I happy to receive it 
+  - Prefer written so I can better reflect, record and act on it
 
 # Things I need
 Need:
+
 
 # How I learn best
 Learn:
@@ -33,7 +39,8 @@ Struggle:
 
 # Things I love
 Love:
-
+  - Lego
+  - Getting stuff done
 # Other things to know about me
 Other:
 
