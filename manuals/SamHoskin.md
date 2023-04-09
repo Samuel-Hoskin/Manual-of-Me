@@ -1,7 +1,11 @@
 ---
 homepage: true
 layout: manual
+tag: manual
 title: Samuel Hoskin
+photo:
+#  - link: https://avatars.githubusercontent.com/u/66562886?v=4
+#    alt: Photo of Samuel Hoskin
 # Conditions I like to work in
 Conditions:
   - Quite Workspace
@@ -35,12 +39,28 @@ Other:
 
 
 # If I were an animated gif/meme, I would be...
-Gif/Meme:
+Gif:
   - link: https://media0.giphy.com/media/3osxYoCkKu892JBLUc/giphy.gif?cid=ecf05e47e2e579e5a5d99a020ed17d56df58e00fa10c9418&rid=giphy.gif&ct=g
-    alt: Looney Tunes Vintage GIF
+    alt: Looney Tunes Vintage GIF 
 
 
 
      
 ---
 
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+  <h2 class="govuk-heading-m">[Custom Statement 1]</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+      <li> Item One </li>
+    </ul>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+  <h2 class="govuk-heading-m">[Custom Statement 2]</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+      <li> Item One </li>
+    </ul>
+  </div>
+
+</div>
