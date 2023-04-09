@@ -9,16 +9,7 @@ startButton:
 image:
   src: https://www.svgrepo.com/download/509848/circled-user.svg
   alt: Eleventy’s possum mascot hanging on a red balloon and floating above a laptop.
-aside:
-  title: Aside
-  content: | 
-    A small portion of content that is **indirectly** related to the main content.
-related:
-  sections:
-    - title: Related links
-      items:
-        - text: Create your own?
-          href: ../../layouts
+
 
      
 ---
@@ -44,3 +35,5 @@ The contents of a Manual of Me will vary depending on the individual. This tool 
 This is open-source site, so if you feel there should be more built in ones, please contribute.
 
 This site can also accommodate individual questions for each manual.  
+
+## Ready to create your own?
