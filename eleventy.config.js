@@ -17,6 +17,21 @@ module.exports = function(eleventyConfig) {
       copyright: {
         text: ' '
       },
+      meta: {
+        items: [
+          {
+            href: "https://github.com/Samuel-Hoskin/Manual-of-Me",
+            text: "GitHub Repo"
+          },
+          {
+            href: "",
+            text: "About"
+          },
+
+
+        ],
+        html: 'Built by  <a href="#" class="govuk-footer__link">Samuel Hoskin</a>'
+      }
     }
         
 
