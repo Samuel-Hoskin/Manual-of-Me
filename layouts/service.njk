@@ -1,0 +1,145 @@
+{% extends "layouts/base.njk" %}
+
+{% block main %}
+  {{ xGovukMasthead({
+    classes: "x-govuk-masthead--large",
+    title: {
+      html: title | smart
+    } if title,
+    description: {
+      html: shortDescription | markdown("inline") | noOrphans
+    } if shortDescription,
+    startButton: {
+      href: startButton.href | url,
+      text: startButton.text
+    } if startButton,
+    image: {
+      alt: image.alt,
+      src: image.src | url
+    } if image,
+    breadcrumbs: {
+      classes: "govuk-!-display-none-print govuk-!-margin-bottom-0",
+      items: breadcrumbItems
+    } if showBreadcrumbs
+  }) }}
+
+  <div class="govuk-width-container">
+    {% block beforeContent %}{% endblock %}
+    <main class="govuk-main-wrapper {{ mainClasses }}" id="main-content" role="main"{% if mainLang %} lang="{{ mainLang }}"{% endif %}>
+      {% block content %}
+
+        <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-xl">About</h2>
+        <p> This service is in the {% include "layouts/phase.njk" %} phase. </p>
+        {% if longDesciption %}
+        <p> {{ longDesciption }} </p>
+        {% endif %}
+        
+        {% if team %}
+          <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">Team Members</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Name</th>
+              <th scope="col" class="govuk-table__header">Role</th>
+              <th scope="col" class="govuk-table__header">Join Date</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+
+          {% for item in team %}
+
+          <tr class="govuk-table__row">
+              <th class="govuk-table__cell">{%if item.email%}<a href="mailto:{{item.email}}" class="govuk-link">{% endif %}{{ item.name }}</a></th>
+              <td class="govuk-table__cell">{{ item.role }}</td>
+              <td class="govuk-table__cell">{{ item.joined }}</td>              
+          </tr>
+          {% endfor %}
+
+         </tbody>
+        </table>
+        {% endif %}
+
+        {% if userGroups %}
+
+        <h3 class="govuk-heading-m">User Groups</h3>
+          {% if userGroupsPreText %}
+            <p>{{userGroupsPreText}}</p>
+          {%else%}
+          <p>We identified the key user groups during the discovery phase of the project. With their help, we designed the service based on their needs with special attention to usability and accessibility.</p>
+          {% endif %}
+
+          {% for item in userGroups %}
+            <h4 class="govuk-heading-s">{{item.name}}</h4>
+            <p>{{item.objective}} </p>
+          {% endfor %}
+
+        {% endif %}
+
+        {% if userNeeds %}
+        <h3 class="govuk-heading-m">User Needs</h3>
+          {% if userNeedsPreText %}
+            <p>{{userNeedsPreText}}</p>
+          {%else%}
+          <p>We have identified following key user needs during our research:</p>
+          {% endif %}
+        {% for item in userNeeds %}
+        <p><strong>As a </strong>{{item.user}}, <strong>I need to </strong>{{item.need}}, <strong>so that I </strong> {{item.soThat}} </p>
+        {% endfor %}
+        {% endif %}
+
+
+        {% if phaseHistory %}
+          <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">Phase History</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Phase</th>
+              <th scope="col" class="govuk-table__header">Start</th>
+              <th scope="col" class="govuk-table__header">Finish</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+
+          {% for item in phaseHistory %}
+
+          <tr class="govuk-table__row">
+              <th class="govuk-table__cell">{{ item.phase }}</th>
+              <td class="govuk-table__cell">{{ item.start }}</td>
+              <td class="govuk-table__cell">{{ item.finish }}</td>              
+          </tr>
+          {% endfor %}
+
+         </tbody>
+        </table>
+        {% endif %}
+
+        {{ appProseScope(content) if content }}
+
+      </div>
+
+
+
+      <div class="govuk-grid-column-one-third">
+        {% if links%}
+          <h3 class="govuk-heading-m">Links</h3>
+
+          {% for item in links %}
+          <h4 class="govuk-heading-s"><a href="{{ item.link }}" class="govuk-link">{{ item.title }}</a></h4>
+          {% if item.text%}
+          <p class="govuk-body">{{ item.text }}</p>
+          {% endif %}
+
+          {% endfor %}
+        {% endif %}
+        
+      </div>
+    </div>
+
+
+        {% include "layouts/shared/related.njk" %}
+      {% endblock %}
+    </main>
+  </div>
+{% endblock %}

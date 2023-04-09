@@ -1,0 +1,82 @@
+{% extends "layouts/base.njk" %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    classes: "govuk-!-display-none-print",
+    items: breadcrumbItems
+  }) if showBreadcrumbs }}
+{% endblock %}
+
+{% block content %}
+  {{ appDocumentHeader({
+    title: title,
+    description: description
+  }) }}
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="/assets/js/radar.js"></script>
+
+<link rel="stylesheet" href="/assets/css/radar.css">
+
+<svg id="radar"></svg>
+
+
+
+
+<script>
+radar_visualization({
+  svg_id: "radar",
+  width: 1450,
+  height: 1000,
+  colors: {
+    background: "#fff",
+    grid: '#dddde0',
+    inactive: "#ddd"
+  },
+  title: "",
+  date: "",
+  quadrants: [
+    {% for item in quadrants %}
+
+    { name: "{{item.BR}}" },
+    { name: "{{item.BL}}" },
+    { name: "{{item.TR}}" },
+    { name: "{{item.TL}}" },
+
+    {% endfor %}
+  ],
+  rings: [
+    { name: "ADOPT", color: "#5ba300" },
+    { name: "TRIAL", color: "#009eb0" },
+    { name: "ASSESS", color: "#c7ba00" },
+    { name: "HOLD", color: "#e09b96" }
+  ],
+  print_layout: true,
+  links_in_new_tabs: true,
+    //zoomed_quadrant: ,
+  //ENTRIES
+  entries: [
+    {% for item in items %}
+
+      {
+        "quadrant": {{item.quadrant}},
+        "ring": {{item.ring}},
+        "label": "{{item.label}}",
+        {%if item.link%}"link": "{{item.link}}",{% endif %}
+        "active": {{item.active}},
+        "moved": {{item.moved}}
+      },
+
+    {% endfor %}
+
+    ]
+  //ENTRIES
+});
+</script>
+
+
+
+  {{ appProseScope(content) if content }}
+
+  {% include "layouts/shared/related.njk" %}
+{% endblock %}

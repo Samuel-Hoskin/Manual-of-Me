@@ -1,0 +1,160 @@
+{% extends "layouts/base.njk" %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    classes: "govuk-!-display-none-print",
+    items: breadcrumbItems
+  }) if showBreadcrumbs }}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <p>Photo Here</p>
+  </div>
+    <div class="govuk-grid-column-two-thirds">
+  <h1 class="govuk-heading-xl">{{title}}</h1>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+
+{# Conditions I like to work in #}
+{% if Conditions %}
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Conditions I like to work in</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+    {% for item in Conditions%}
+      <li>{{ item }}
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{# Times / hours I like to work #}
+{% if Time %}
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Times / hours I like to work</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+    {% for item in Time%}
+      <li>{{ item }}
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{# Best ways to communicate with me #}
+{% if Communicate %}
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Best ways to communicate with me</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+    {% for item in Communicate%}
+      <li>{{ item }}
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{# How I best receive feedback #}
+{% if Feedback %}
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">How I best receive feedback</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+    {% for item in Feedback%}
+      <li>{{ item }}
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{# Things I need #}
+{% if Need %}
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Things I need</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+    {% for item in Need%}
+      <li>{{ item }}
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{# How I learn best #}
+{% if Learn %}
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">How I learn best</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+    {% for item in Learn%}
+      <li>{{ item }}
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{# Things I struggle with #}
+{% if Struggle %}
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Things I struggle with</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+    {% for item in Struggle%}
+      <li>{{ item }}
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{# Things I love #}
+{% if Love %}
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Things I love</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+    {% for item in Love %}
+      <li>{{ item }}
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{# Other things to know about me #}
+{% if Other %}
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Other things to know about me</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+    {% for item in Other %}
+      <li>{{ item }}
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{# If I were an animated gif/meme, I would be... #}
+{% if Gif/Meme %}
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">If I were an animated gif/meme, I would be...</h2>
+    
+    {% for item in Gif/Meme %}
+      <img src="{{ item.link }}" alt="{{ item.alt }}">
+    {% endfor %}
+
+  </div>
+{% endif %}
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+  {{ appProseScope(content) if content }}
+
+  {% include "layouts/shared/related.njk" %}
+{% endblock %}

@@ -1,0 +1,37 @@
+{%- from "govuk/components/tag/macro.njk" import govukTag -%}
+{%if phase == "Discovery"%}
+ {{govukTag({
+          text: "Discovery",
+          classes: "govuk-tag--pink"
+        })}}
+{% endif %}
+{%if phase == "Alpha"%}
+ {{govukTag({
+          text: "Alpha",
+          classes: "govuk-tag--pink"
+        })}}
+{% endif %}
+{%if phase == "Private Beta"%}
+ {{govukTag({
+          text: " Private Beta ",
+          classes: "govuk-tag--purple"
+        })}}
+{% endif %}
+{%if phase == "Public Beta"%}
+ {{govukTag({
+          text: "Public Beta",
+          classes: "govuk-tag--turquoise"
+        })}}
+{% endif %}
+{%if phase == "Live"%}
+ {{govukTag({
+          text: "Live",
+          classes: "govuk-tag--green"
+        })}}
+{% endif %}
+{%if phase == "Retired"%}
+ {{govukTag({
+          text: "Retired",
+          classes: "govuk-tag--grey"
+        })}}
+{% endif %}
