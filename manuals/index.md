@@ -1,12 +1,11 @@
 ---
 layout: collection
 order: 4
-title: Collection
-description: Layout for a paginated list of pages.
-paginationHeading: Example collection
+title: Collection of Manuals
+description: All the Manuals of Me that are contained within this site.
 pagination:
-  data: collections.manual
-  size: 2
+  data: collections.all
+  size: 10
   generatePageOnEmptyData: true
 
 ---
