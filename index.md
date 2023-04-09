@@ -4,8 +4,8 @@ layout: product
 title: Manual of Me
 description: This site contains user manauals to help under standahow
 startButton:
-  href: "#"
-  text: Start button
+  href: "/manuals"
+  text: View Manual's
 image:
   src: https://www.svgrepo.com/download/509848/circled-user.svg
   alt: Eleventy’s possum mascot hanging on a red balloon and floating above a laptop.
