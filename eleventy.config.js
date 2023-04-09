@@ -7,6 +7,16 @@ module.exports = function(eleventyConfig) {
     header:{
         organisationLogo: '',
         organisationName:'Manual of Me',
+    },
+    fontFamily: 'arial',
+
+    footer:{
+      contentLicence: {
+        text: ' '
+      },
+      copyright: {
+        text: ' '
+      },
     }
         
 
