@@ -24,7 +24,7 @@ module.exports = function(eleventyConfig) {
             text: "GitHub Repo"
           },
           {
-            href: "",
+            href: "/about",
             text: "About"
           },
 
