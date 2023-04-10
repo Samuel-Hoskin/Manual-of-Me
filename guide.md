@@ -72,25 +72,3 @@ Learn:
 
 ```
 
-
-## Custom Responses
-Want to add your own questions/responses to your manual, let's show you how.
-
-After you have created a markdown file following the above, copy the following underneath the `---`, you can then amend `[Custom Statement 1]` to be your statement. Copy the `<li> Item One </li>` for as many responces you want to give
-```html
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-third">
-  <h2 class="govuk-heading-m">[Custom Statement 1]</h2>
-    <ul class="govuk-list govuk-list--bullet">   
-      <li> Item One </li>
-    </ul>
-  </div>
-
-  <div class="govuk-grid-column-one-third">
-  <h2 class="govuk-heading-m">[Custom Statement 2]</h2>
-    <ul class="govuk-list govuk-list--bullet">   
-      <li> Item One </li>
-    </ul>
-  </div>
-</div>
-```
