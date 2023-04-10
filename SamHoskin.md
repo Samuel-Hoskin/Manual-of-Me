@@ -1,8 +1,15 @@
 ---
-homepage: true
+
 layout: manual
 tag: manual
 title: Samuel Hoskin
+#Short Bio
+description: Senior Agile Delivery Manager, Defra 
+#Bio
+bio: 
+#Updated Date
+date: git Last Modified
+#Photo
 photo:
 #  - link: https://avatars.githubusercontent.com/u/66562886?v=4
 #    alt: Photo of Samuel Hoskin
