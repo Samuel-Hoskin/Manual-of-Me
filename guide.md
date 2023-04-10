@@ -4,6 +4,8 @@ title: Guide
 description: How to create your own manual of me on this site.
 ---
 
+<strong class="govuk-tag govuk-tag--red"> Warning </strong> This site is a work in progress. If you encounter any issues please let [Sam](https://twitter.com/Samuel_Hoskin) know.
+
 
 This site is built on markdown files and majority of content all in simple frontmatter. If that does not make sense, that is fine you don't need to know the technology to follow along.
 
