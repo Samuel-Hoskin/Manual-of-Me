@@ -62,7 +62,7 @@ photo:
   - link: [Your Photo Link here (Inc https://)]
     alt: [text describing the image for those using screen readers] 
 ```
-For each of the question, you can choose weather to  answer and include in your manual. Lets take `# How I learn best`. For each bullet point answer you want to give, enter ,tab dash
+For each of the question, you can choose weather to  answer and include in your manual. Lets take `# How I learn best`. For each bullet point answer you want to give, enter, tab and dash. You should end up with something looking like the below
 ```yaml
 # How I learn best
 Learn:
@@ -70,4 +70,27 @@ Learn:
     - [Bullet Point 2]
     - [Bullet Point 3]
 
+```
+
+
+## Custom Responses
+Want to add your own questions/responses to your manual, let's show you how.
+
+After you have created a markdown file following the above, copy the following underneath the `---`, you can then amend `[Custom Statement 1]` to be your statement. Copy the `<li> Item One </li>` for as many responces you want to give
+```html
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+  <h2 class="govuk-heading-m">[Custom Statement 1]</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+      <li> Item One </li>
+    </ul>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+  <h2 class="govuk-heading-m">[Custom Statement 2]</h2>
+    <ul class="govuk-list govuk-list--bullet">   
+      <li> Item One </li>
+    </ul>
+  </div>
+</div>
 ```
