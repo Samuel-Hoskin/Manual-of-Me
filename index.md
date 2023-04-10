@@ -2,7 +2,7 @@
 homepage: true
 layout: product
 title: Manual of Me
-description: This site contains user manauals to help under standahow
+description: This site contains Manual of Me's to help communicate how they like work.
 startButton:
   href: "/manuals"
   text: View Manual's
@@ -15,7 +15,8 @@ image:
 ---
 ## What is a Manual of Me?
 
-A "Manual of Me" is a guide or document that outlines an individual's personal approach to life and work. It is a tool for self-discovery and self-awareness that can help individuals identify their values, beliefs, goals, and priorities, and provide guidance on how to live and work in alignment with these principles.
+Think of a "Manual of Me" as an guide for people. It is a document that outlines an individual's personal approach/presences to work. It shows how an individual best operates and how you can best interact. 
+
 
 ## What makes up a Manual of Me?
 
@@ -34,6 +35,7 @@ The contents of a Manual of Me will vary depending on the individual. This tool 
 
 This is open-source site, so if you feel there should be more built in ones, please contribute.
 
-This site can also accommodate individual questions for each manual.  
-
 ## Ready to create your own?
+
+Follow this [guide](/guide) on how to set up your own Manual of Me on this site. 
+
