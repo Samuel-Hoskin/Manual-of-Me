@@ -11,8 +11,8 @@ bio:
 date: git Last Modified
 #Photo
 photo:
-#  - link: https://avatars.githubusercontent.com/u/66562886?v=4
-#    alt: Photo of Samuel Hoskin
+  - link: https://avatars.githubusercontent.com/u/66562886?v=4
+    alt: Photo of Samuel Hoskin
 # Conditions I like to work in
 Conditions:
   - Quite Workspace
@@ -61,20 +61,3 @@ Gif:
 
      
 ---
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-third">
-  <h2 class="govuk-heading-m">[Custom Statement 1]</h2>
-    <ul class="govuk-list govuk-list--bullet">   
-      <li> Item One </li>
-    </ul>
-  </div>
-
-  <div class="govuk-grid-column-one-third">
-  <h2 class="govuk-heading-m">[Custom Statement 2]</h2>
-    <ul class="govuk-list govuk-list--bullet">   
-      <li> Item One </li>
-    </ul>
-  </div>
-
-</div>
