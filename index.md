@@ -7,7 +7,7 @@ startButton:
   href: "/manuals"
   text: View Manual's
 image:
-  src: https://www.svgrepo.com/download/509848/circled-user.svg
+  src: /assets/images/circled-user-svgrepo-com.svg
   alt: Eleventy’s possum mascot hanging on a red balloon and floating above a laptop.
 
 
