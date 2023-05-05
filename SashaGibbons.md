@@ -2,6 +2,12 @@
 layout: manual
 tag: manual
 title: Sasha Gibbons 
+#Short Bio
+description: Fast Stream Delivery Manager, Defra 
+#Bio
+bio: 
+#Updated Date
+date: git Last Modified
 photo:
   - link: https://media.licdn.com/dms/image/C4E03AQHeIi6Is9wQaA/profile-displayphoto-shrink_200_200/0/1653586588266?e=1688601600&v=beta&t=8iDfp09PoC1Un_yDa13pLEELNWnwDIO5LHzjNILfk1g
     alt: Photo of Sasha Gibbons smiling 
