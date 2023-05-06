@@ -1,7 +1,7 @@
 ---
 
 layout: manual
-tag: manual
+tags: manual
 title: Samuel Hoskin
 #Short Bio
 description: Senior Agile Delivery Manager, Defra 

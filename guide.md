@@ -13,7 +13,7 @@ By the end this you will have created a file using the below that will used to m
 ```YAML
 ---
 layout: manual
-tag: manual
+tags: manual
 title: Joe Blogs
 #Short Bio 
 description: 

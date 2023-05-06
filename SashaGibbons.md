@@ -1,6 +1,6 @@
 ---
 layout: manual
-tag: manual
+tags: manual
 title: Sasha Gibbons 
 #Short Bio
 description: Fast Stream Delivery Manager, Defra 
