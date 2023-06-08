@@ -4,7 +4,7 @@ layout: manual
 tags: manual
 title: Samuel Hoskin
 #Short Bio
-description: Senior Agile Delivery Manager, Defra 
+description: Senior Agile Delivery Manager, i.AI 
 #Bio
 bio: 
 #Updated Date
@@ -18,19 +18,18 @@ Conditions:
   - Quiet Workspace
   - Normally will have Noise Canceling headphones on
   - Prefer focus time
-  - Enjoy working with and as community with shared goals
+  - Enjoy working with and as a community with shared goals
 # Times / hours I like to work
 Time:
-  - I work Monday - Friday
-  - I normally start around 09:00 and finish at 18:00
+  - I work Monday - Friday from 09:00  until 18:00
   - My calendar in normally up-to-date and open for people to see 
   - I am occasional insomniac, so might have the odd late start
 # Best ways to communicate with me
 Communicate:
   - If in the office, come say Hi 👋
-  - Slack or if am available, call me
+  - Slack or if I am available, call me
   - Be direct with what you asking for
-  - Be clean on any urgency, as I will do my best to priorities
+  - Be clean on any urgency, as I will do my best to prioritise
 
 # How I best receive feedback
 Feedback:
@@ -43,14 +42,20 @@ Need:
 
 # How I learn best
 Learn:
+  - Having time to digest things
+  - Being able to ask lots of questions
+  - Documentation
+  - Trial and Error
 
 # Things I struggle with
 Struggle:
+  - Spelling due to Dyslexia 
 
 # Things I love
 Love:
-  - Lego
   - Getting stuff done
+  - Lego
+  - Plants
 # Other things to know about me
 Other:
   
