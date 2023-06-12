@@ -8,8 +8,8 @@ bio:
 #Updated Date
 date: git Last Modified
 photo:
-  - link: ![image](https://github.com/Samuel-Hoskin/Manual-of-Me/assets/133884409/c5472a8d-c3ba-4102-9f24-8d9cc6cbb894)
-    alt: Picture of Nicky's face
+  - link: 
+    alt:
 
 # Conditions I like to work in
 Conditions:
