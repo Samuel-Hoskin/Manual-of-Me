@@ -10,7 +10,7 @@ bio:
 #Updated Date
 date: git Last Modified
 photo:
-  - link: ![image](https://github.com/Samuel-Hoskin/Manual-of-Me/assets/133884409/ad438a59-ae33-415c-845b-e7b1c7750f34)
+  - link: https://github.com/Samuel-Hoskin/Manual-of-Me/assets/133884409/ad438a59-ae33-415c-845b-e7b1c7750f34
 
     alt:Photogaph of Nicky's face
 
