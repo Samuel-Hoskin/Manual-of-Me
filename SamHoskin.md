@@ -4,7 +4,7 @@ layout: manual
 tags: manual
 title: Samuel Hoskin
 #Short Bio
-description: Senior Agile Delivery Manager, i.AI 
+description: AI Delivery Lead, Defra
 #Bio
 bio: 
 #Updated Date
@@ -35,7 +35,7 @@ Communicate:
 Feedback:
   - Honest and Often, If you are willing to give it I happy to receive it 
   - Prefer written so I can better reflect, record and act on it
-  - There is a <a href="https://forms.gle/Z1zJLtd86gGAbJk18"> form</a> that you can use to provide feedback
+  - There is a <a href="(https://forms.office.com/r/24mvn9QH8P"> form</a> that you can use to provide feedback
 
 # Things I need
 Need:
