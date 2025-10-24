@@ -29,7 +29,7 @@ Communicate:
   - If in the office, come say Hi 👋
   - Slack or if I am available, call me
   - Be direct with what you asking for
-  - Be clean on any urgency, as I will do my best to prioritise
+  - Be clear on any urgency, as I will do my best to prioritise
 
 # How I best receive feedback
 Feedback:
